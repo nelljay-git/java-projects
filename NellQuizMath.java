@@ -11,12 +11,14 @@ public class NellMathQuiz {
         int score = 0;
         int level = 0;
         
+        
 
         // Start
         
         System.out.println("Quiz time! (10 pts each)");
         System.out.print("Enter your name: ");
-        String name = userInput.nextLine();
+        String name = userInput.next();
+        System.out.print("\n");
 
         
         System.out.println("1. Easy");
@@ -36,8 +38,13 @@ public class NellMathQuiz {
                 break;
             case 3:
                 level = 80;
+                break;
             case 4:
                 level = 1000;
+                break;
+            case 5:
+                level = 1000000;
+                break;
             default:
                 break;
         }
